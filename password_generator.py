@@ -1,8 +1,6 @@
-import random
+password = input("Enter your password: ")
 
-password = ""
-
-for i in range(10):
-    password += str(random.randint(0, 9))
-
-print(password, len(password))
+if 0 < len(password) < 50:
+    print(password, len(password))
+else:
+    print("Not enough characters")
